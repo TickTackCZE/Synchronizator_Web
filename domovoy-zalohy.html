@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domovoy zálohy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Domovoy zálohy</h1>
+<p>Osobní nástroj s jediným uživatelem, svým provozovatelem. Domácí server
+provozovatele jednou denně ukládá šifrovanou zálohu svých dat do Google Disku
+téhož uživatele. Nejde o veřejnou službu a nikdo jiný ho nepoužívá.</p>
+
+<h2>Zásady ochrany osobních údajů</h2>
+<p>Nástroj používá rozsah <code>https://www.googleapis.com/auth/drive.file</code>:
+vidí a mění jen soubory a složky, které sám vytvořil. K ostatnímu obsahu Disku
+přístup nemá.</p>
+<p>Zálohy jsou zašifrované ještě před odesláním, takže jejich obsah nelze na Disku
+přečíst. Zpracování probíhá výhradně na serveru provozovatele; nástroj nemá vlastní
+server, databázi ani analytiku. Lokálně uchovává jen přihlašovací token Google.</p>
+<p>Data z Google API nejsou prodávána, sdílena s třetími stranami ani používána
+k reklamě nebo trénování modelů. Použití dat odpovídá
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>
+včetně požadavků Limited Use. Přístup lze kdykoli odebrat na
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<hr>
+<div lang="en">
+<h2>Domovoy backups — privacy policy (English)</h2>
+<p>A personal, single-user tool: the operator's home server stores a daily,
+encrypted backup of its own data in the same user's Google Drive. It uses the
+<code>drive.file</code> scope only, so it can see and modify only files and folders
+it created itself. Backups are encrypted before upload; all processing happens on
+the operator's own server, with no separate server, database or analytics. Only the
+Google OAuth token is stored locally. Google user data is not sold, shared with third
+parties, or used for advertising or model training, and its use complies with the
+Google API Services User Data Policy, including the Limited Use requirements. Access
+can be revoked at any time at myaccount.google.com/permissions.</p>
+</div>
+</main>
+</body>
+</html>
